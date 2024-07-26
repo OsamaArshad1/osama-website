@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+nav {
+    background-color: #e63946; /* Navbar background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Spacing around the content */
+    text-align: center; /* Center-align text */
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Stick to the top of the viewport */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's on top of other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a row */
+    margin: 0 15px; /* Spacing between items */
+}
+
+nav ul li a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #e63946;
+}
+
+header p {
+    font-size: 18px;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+h2 {
+    color: #e63946;
+}
+
+.job, .education {
+    margin-bottom: 20px;
+}
+
+.job img, .education img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
