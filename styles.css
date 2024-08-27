@@ -6,48 +6,49 @@ body {
     color: #333;
     background-color: #ffffff;
 }
+
 nav {
-    background-color: #e63946; /* Navbar background color */
-    color: #fff; /* Text color */
-    padding: 10px; /* Spacing around the content */
-    text-align: center; /* Center-align text */
-    position: sticky; /* Make the navbar sticky */
-    top: 0; /* Stick to the top of the viewport */
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensure it's on top of other content */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
-    list-style: none; /* Remove bullet points */
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline; /* Display list items in a row */
-    margin: 0 15px; /* Spacing between items */
+    margin: 0 10px;
 }
 
 nav ul li a {
-    color: #fff; /* Link text color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make text bold */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
 }
-
 
 .profile-img {
-    width: 250px; /* Adjust the width as needed */
-    height: 250px; /* Maintain aspect ratio */
-    border-radius: 100%; /* Optional: make the image round */
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
     display: block;
-    margin: 0 auto 10px; /* Center image and add space below it */
+    margin: 0 auto 10px;
 }
-
 
 header {
     background-color: #ffffff;
@@ -66,32 +67,31 @@ header p {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     background-color: #f1f1f1;
 }
 
-
 /* Summary Section Styling */
 .summary-description {
-    background-color: #f9f9f9; /* Similar to Job Description background */
-    border: 1px solid #ddd; /* Border similar to Job Description */
-    border-radius: 8px; /* Rounded corners for a modern look */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 .summary-description h2 {
-    border-bottom: 2px solid #333; /* Add a bottom border to the heading */
+    border-bottom: 2px solid #333;
     padding-bottom: 10px;
     margin-bottom: 20px;
     color: #333;
 }
 
 .summary-description p {
-    line-height: 1.6; /* Improved readability */
+    line-height: 1.6;
     margin-bottom: 15px;
 }
 
@@ -107,35 +107,32 @@ h2 {
 .job-description {
     margin-bottom: 30px;
     position: relative;
-    padding-left: 70px; /* Space for logo */
+    padding-left: 70px;
 }
 
-/* Logo styling */
 .job-description img.job-logo {
-    width: 50px; /* Adjust the size as needed */
+    width: 50px;
     height: auto;
     position: absolute;
-    top: 10px; /* Adjust position as needed */
-    left: 10px; /* Adjust position as needed */
+    top: 10px;
+    left: 10px;
     border-radius: 50%;
-    border: 2px solid white; /* Optional: white border around the logo */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: subtle shadow */
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Style for each list item */
 .job-description ul li {
-    background-color:#e63946; /* Red background color */
-    color: white; /* Text color for contrast */
-    padding: 10px; /* Padding inside each list item */
-    margin-bottom: 8px; /* Space between list items */
-    border-radius: 5px; /* Rounded corners for each list item */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+    background-color: #e63946;
+    color: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .job-description ul li::marker {
-    color: black; /* Black bullet color */
+    color: black;
 }
-
 
 ul {
     padding-left: 20px;
@@ -156,126 +153,62 @@ a:hover {
 
 /* Education Section Styling */
 .education {
-    background-color: #f9f9f9; /* Same background color as Job Description */
-    border: 1px solid #ddd; /* Border similar to Job Description */
-    border-radius: 8px; /* Rounded corners for consistency */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 .education-content {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
 }
 
 .education-logo {
-    width: 100px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: rounded corners for logos */
-    margin-right: 20px; /* Space between logo and text */
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
 }
 
-.education-text h3 {
-    margin-top: 0;
-    margin-bottom: 10px; /* Space between title and text */
-}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
 
-.education-text p {
-    margin-bottom: 0;
-    line-height: 1.6; /* Improved readability */
-}
+    nav ul li {
+        margin: 5px 0;
+    }
 
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
 
-/* Skills Section Styling */
-#skills {
-    background-color: #f9f9f9; /* Same background color as Job Description */
-    border: 1px solid #ddd; /* Border similar to Job Description */
-    border-radius: 8px; /* Rounded corners for consistency */
-    padding: 20px;
-    margin-bottom: 20px;
-}
+    .container {
+        width: 95%;
+    }
 
-#skills h2 {
-    border-bottom: 2px solid #333; /* Add a bottom border to the heading */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #333;
-}
+    .job-description {
+        padding-left: 0;
+    }
 
-#skills ul {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 0;
-}
+    .job-description img.job-logo {
+        position: static;
+        margin-bottom: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-#skills ul li {
-    background: #e63946; /* Background color for list items */
-    border: 1px solid #ddd; /* Border for list items */
-    border-radius: 4px; /* Rounded corners for list items */
-    padding: 10px;
-    margin-bottom: 10px; /* Space between list items */
-    color: #333; /* Text color for list items */
-}
+    .education-content {
+        flex-direction: column;
+        text-align: center;
+    }
 
-#skills ul li:last-child {
-    margin-bottom: 0; /* Remove margin from the last item */
-}
-
-/* Optional: Change text color of headings within Skills */
-#skills h2{
-    color: #000;
-}
- #skills ul li {
-    color: #fff; /* White color for headings and list items */
-}
-
-/* Optional: If you need to specifically target descriptions within the Skills section */
-#skills p {
-    color: #fff; /* White color for description paragraphs */
-}
-
-/* Contact Section Styling */
-#contact {
-    background-color: #f9f9f9; /* Consistent with other sections */
-    border: 1px solid #ddd; /* Border for consistency */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-#contact h2 {
-    border-bottom: 2px solid #333; /* Add a bottom border to the heading */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.contact-details p {
-    margin: 10px 0; /* Space between paragraphs */
-}
-
-.contact-details a {
-    color: #0066cc; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-
-.contact-details a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Footer Styling */
-footer {
-    background-color: #e63946; /* Dark background for contrast */
-    color: black; /* White text color */
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid #444; /* Border at the top for separation */
-}
-
-footer a {
-    color: #2049b0; /* Highlighted link color */
-    text-decoration: none; /* Remove underline */
-}
-
-footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+    .education-logo {
+        margin-bottom: 10px;
+    }
 }
